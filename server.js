@@ -31,6 +31,6 @@ app.post('/', function(req, res) {
     })
 });
 
-app.listen(5000, function() {
+app.listen(process.env.PORT || 8080, function() {
     console.log("Kode weather listening on port 8080")
 })
